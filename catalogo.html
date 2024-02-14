@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Librería Digital - Catálogo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0; /* Gris plata */
+            color: #000; /* Negro para el texto */
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: #333; /* Gris oscuro */
+            color: #fff; /* Blanco para el texto */
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        /* Contenido principal */
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        /* Catálogo de productos */
+        #catalog {
+            flex-basis: 100%;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-gap: 20px;
+        }
+
+        .product {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 20px;
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Carrito de compras */
+        #cart {
+            flex-basis: 100%;
+            background-color: #fff;
+            padding: 20px;
+        }
+
+        /* Estilos responsivos */
+        @media screen and (max-width: 768px) {
+            main {
+                flex-direction: column;
+            }
+
+            #catalog {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            }
+
+            #cart {
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Librería Digital</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="mislibros.html">Mis Compras</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="catalog">
+            <h2>Catálogo de Productos</h2>
+            <!-- Aquí se listarían los productos disponibles -->
+            <div class="product">
+                <img src="producto1.jpg" alt="Producto 1">
+                <h3>Nombre del Producto 1</h3>
+                <p>Descripción del Producto 1.</p>
+                <button class="btn btn-primary">Agregar al Carrito</button>
+            </div>
+            <div class="product">
+                <img src="producto2.jpg" alt="Producto 2">
+                <h3>Nombre del Producto 2</h3>
+                <p>Descripción del Producto 2.</p>
+                <button class="btn btn-primary">Agregar al Carrito</button>
+            </div>
+            <!-- Más productos... -->
+        </section>
+        
+        <aside id="cart">
+            <h2>Carrito de Compras</h2>
+            <!-- Aquí se mostrarían los productos seleccionados -->
+            <ul>
+                <li>Nombre del Producto 1 - Precio</li>
+                <li>Nombre del Producto 2 - Precio</li>
+                <!-- Más productos... -->
+            </ul>
+            <p>Total: $XX.XX</p>
+            <button class="btn btn-success">Comprar</button>
+        </aside>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 Librería Digital. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Scripts de Bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

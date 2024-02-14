@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OlyNutrition - Inicio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5efef; /* Gris plata */
+            color: #030303; /* Negro para el texto */
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: #f0f0f0; /* Fondo claro */
+            color: #030303; /* Blanco para el texto */
+            padding: 10px 0;
+            position: relative; /* Establecer la posición relativa para los elementos hijos */
+        }
+
+        header .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative; /* Establecer la posición relativa */
+            animation: flame 3s infinite alternate; /* Animación tipo fuego */
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #030303;
+            font-weight: bold;
+        }
+
+        /* Animación tipo fuego */
+        @keyframes flame {
+            70% { color: #ff5733; } /* Rojo */
+            50% { color: #ffbb00; } /* Amarillo */
+            100% { color: #ff5733; } /* Rojo */
+        }
+
+        /* Contenido principal */
+        main {
+            text-align: center;
+            padding: 50px;
+        }
+
+        /* Inicio */
+        #inicio {
+            margin: 0 auto;
+            max-width: 800px;
+        }
+
+        #inicio h2 {
+            font-size: 24px;
+        }
+
+        /* Carrusel de fotos */
+        .carousel-inner img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Estilos responsivos */
+        @media screen and (max-width: 768px) {
+            main {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="index.html"><img src="cropped-logo-oly-1-120x60.png" alt="OlyNutrition" style="width: 100px; height: 100px;"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="in.html">Inicio</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="mislibros.html">Mis Compras</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="inicio">
+            <div class="container">
+                <h2>La calidad de nuestros productos es la garantía que necesitás</h2>
+                <p>Además de contribuir al desarrollo muscular, las proteínas también ayudan a mantener un sistema inmunológico fuerte, regulan el equilibrio de líquidos y participan en la producción de enzimas y hormonas. Incorporar una cantidad adecuada de proteínas en la dieta puede promover la saciedad, lo que facilita el control del peso, y también puede ayudar a mantener niveles estables de energía a lo largo del día.</p>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="text-center">
+        <div class="container">
+            <p>&copy; 2024 OlyNutrition. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Carrusel de fotos -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="fondo.jpg" alt="imagen1">
+    </div>
+
+    <!-- Scripts de Bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

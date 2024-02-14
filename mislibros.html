@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Librería Digital - Mis Compras</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0; /* Gris plata */
+            color: #000; /* Negro para el texto */
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: #333; /* Gris oscuro */
+            color: #fff; /* Blanco para el texto */
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        /* Contenido principal */
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        /* Mis Compras */
+        #miscompras {
+            flex-basis: 70%;
+        }
+
+        .product {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Pago final */
+        #pago {
+            flex-basis: 25%;
+            background-color: #fff;
+            padding: 20px;
+        }
+
+        .payment-button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #333; /* Gris oscuro */
+            color: #fff; /* Blanco para el texto */
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Estilos responsivos */
+        @media screen and (max-width: 768px) {
+            main {
+                flex-direction: column;
+            }
+
+            #miscompras {
+                flex-basis: 100%;
+            }
+
+            #pago {
+                flex-basis: 100%;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="cropped-logo-oly-1-120x60.png" alt="OlyNutrition" style="width: 100px; height: 100px;"></a>
+        <nav>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="miscompras.html">Mis Compras</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="miscompras">
+            <h2>Mis Compras</h2>
+            <!-- Aquí se listarían los productos comprados -->
+            <div class="product">
+                <img src="producto1.jpg" alt="Producto 1">
+                <h3>Nombre del Producto 1</h3>
+                <p>Descripción del Producto 1.</p>
+                <p>Precio: $XX.XX</p>
+            </div>
+            <div class="product">
+                <img src="producto2.jpg" alt="Producto 2">
+                <h3>Nombre del Producto 2</h3>
+                <p>Descripción del Producto 2.</p>
+                <p>Precio: $XX.XX</p>
+            </div>
+            <!-- Más productos... -->
+        </section>
+        
+        <aside id="pago">
+            <h2>Pago Final</h2>
+            <!-- Botón para proceder al pago -->
+            <button class="payment-button">Proceder al Pago</button>
+        </aside>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 Librería Digital. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Scripts de Bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+<div class="site-primary-footer-wrap ast-builder-grid-row-container site-footer-focus-item ast-builder-grid-row-3-equal ast-builder-grid-row-tablet-3-equal ast-builder-grid-row-mobile-full ast-footer-row-stack ast-footer-row-tablet-stack ast-footer-row-mobile-stack" data-section="section-primary-footer-builder">
+	<div class="ast-builder-grid-row-container-inner">
+					<div class="ast-builder-footer-grid-columns site-primary-footer-inner-wrap ast-builder-grid-row">
+											<div class="site-footer-primary-section-1 site-footer-section site-footer-section-1">
+							<aside class="footer-widget-area widget-area site-footer-focus-item" data-section="sidebar-widgets-footer-widget-1" aria-label="Footer Widget 1">
+			<div class="footer-widget-area-inner site-info-inner"><section id="text-1" class="widget widget_text"><h2 class="widget-title">Nuestras Sucursales</h2>			<div class="textwidget"><p><strong>Resistencia</strong><br>
+Saavedra 186</p>
+<p><strong>Corrientes</strong><br>
+Salta 1468</p>
+</div>
+		</section></div>		</aside>
+						</div>
+											<div class="site-footer-primary-section-2 site-footer-section site-footer-section-2">
+							<div class="footer-widget-area widget-area site-footer-focus-item ast-footer-html-1" data-section="section-fb-html-1">
+			<div class="ast-header-html inner-link-style-"><div class="ast-builder-html-element"><p><img class="alignnone size-medium wp-image-1610" src="http://olynutrition.com.ar/wp-content/uploads/2023/09/logo-oly-300x150.png" alt="" width="300" height="150"></p>
+</div></div>		</div>
+					<div class="ast-builder-layout-element ast-flex site-footer-focus-item" data-section="section-fb-social-icons-1">
+				<div class="ast-footer-social-1-wrap ast-footer-social-wrap"><div class="footer-social-inner-wrap element-social-inner-wrap social-show-label-false ast-social-color-type-custom ast-social-stack-none ast-social-element-style-filled"><a href="https://www.facebook.com/Oly.corrientes" aria-label="Facebook" target="_blank" rel="noopener noreferrer" style="--color: #557dbc; --background-color: transparent;" class="ast-builder-social-element ast-inline-flex ast-facebook footer-social-item"><span class="ahfb-svg-iconset ast-inline-flex svg-baseline"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"></path></svg></span></a><a href="https://www.instagram.com/olynutrition/" aria-label="Instagram" target="_blank" rel="noopener noreferrer" style="--color: #8a3ab9; --background-color: transparent;" class="ast-builder-social-element ast-inline-flex ast-instagram footer-social-item"><span class="ahfb-svg-iconset ast-inline-flex svg-baseline"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224,202.66A53.34,53.34,0,1,0,277.36,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.41-30.41c-21-8.29-71-6.43-94.3-6.43s-73.25-1.93-94.31,6.43a54,54,0,0,0-30.41,30.41c-8.28,21-6.43,71.05-6.43,94.33S91,329.26,99.32,350.33a54,54,0,0,0,30.41,30.41c21,8.29,71,6.43,94.31,6.43s73.24,1.93,94.3-6.43a54,54,0,0,0,30.41-30.41c8.35-21,6.43-71.05,6.43-94.33S357.1,182.74,348.75,161.67ZM224,338a82,82,0,1,1,82-82A81.9,81.9,0,0,1,224,338Zm85.38-148.3a19.14,19.14,0,1,1,19.13-19.14A19.1,19.1,0,0,1,309.42,189.74ZM400,32H48A48,48,0,0,0,0,80V432a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V80A48,48,0,0,0,400,32ZM382.88,322c-1.29,25.63-7.14,48.34-25.85,67s-41.4,24.63-67,25.85c-26.41,1.49-105.59,1.49-132,0-25.63-1.29-48.26-7.15-67-25.85s-24.63-41.42-25.85-67c-1.49-26.42-1.49-105.61,0-132,1.29-25.63,7.07-48.34,25.85-67s41.47-24.56,67-25.78c26.41-1.49,105.59-1.49,132,0,25.63,1.29,48.33,7.15,67,25.85s24.63,41.42,25.85,67.05C384.37,216.44,384.37,295.56,382.88,322Z"></path></svg></span></a></div></div>			</div>
+						</div>
+											<div class="site-footer-primary-section-3 site-footer-section site-footer-section-3">
+							<aside class="footer-widget-area widget-area site-footer-focus-item" data-section="sidebar-widgets-footer-widget-3" aria-label="Footer Widget 3">
+			<div class="footer-widget-area-inner site-info-inner"><section id="text-3" class="widget widget_text"><h2 class="widget-title">Nuestros teléfonos</h2>			<div class="textwidget"><p>MINORISTA📲 3624835099<br>
+MAYORISTA📲 3624519212</p>
+</div>
+		</section></div>		</aside>
+						</div>
+										</div>
+			</div>
+
+</div>

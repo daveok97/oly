@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Librería Digital - Crear Usuario</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0; /* Gris plata */
+            color: #000; /* Negro para el texto */
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: #333; /* Gris oscuro */
+            color: #fff; /* Blanco para el texto */
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        /* Contenido principal */
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        /* Formulario de creación de usuario */
+        #crear-usuario {
+            flex-basis: 70%;
+        }
+
+        #crear-usuario form {
+            margin-top: 20px;
+        }
+
+        #crear-usuario form input {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+
+        /* Redes sociales y contacto */
+        #contacto {
+            flex-basis: 100%;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .social-icons {
+            font-size: 30px;
+            margin-right: 10px;
+        }
+
+        .social-buttons {
+            margin-top: 10px;
+        }
+
+        .social-buttons a {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        /* Estilos responsivos */
+        @media screen and (max-width: 768px) {
+            main {
+                flex-direction: column;
+            }
+
+            #crear-usuario {
+                flex-basis: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="cropped-logo-oly-1-120x60.png" alt="OlyNutrition" style="width: 100px; height: 100px;"></a>
+        <nav>
+        <h1>OlyNutrition</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="mislibros.html">Mis compras</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="crear-usuario">
+            <h2>Crear Usuario</h2>
+            <form action="#" method="post">
+                <input type="text" name="username" placeholder="Nombre de usuario" required>
+                <input type="email" name="email" placeholder="Correo electrónico" required>
+                <input type="password" name="password" placeholder="Contraseña" required>
+                <input type="submit" value="Crear Usuario">
+            </form>
+            <div class="social-buttons">
+                <a href="#" class="btn btn-primary">Registrarse con Gmail</a>
+                <a href="#" class="btn btn-danger">Registrarse con Hotmail</a>
+                <a href="#" class="btn btn-primary">Registrarse con Facebook</a>
+            </div>
+        </section>
+        
+        <section id="contacto">
+            <h2>Contacto y Redes Sociales</h2>
+            <a href="#" class="social-icons"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-icons"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icons"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icons"><i class="fas fa-globe"></i></a>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 Librería Digital. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Scripts de Bootstrap y Font Awesome -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
